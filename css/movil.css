@@ -1,0 +1,103 @@
+@media (max-width: 991px) {
+    .header-sitio {
+        position: relative;
+        z-index: 99999;
+        overflow: visible;
+    }
+
+    .header-upper {
+        padding: 15px 4%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .info-contacto-top {
+        display: none;
+    }
+
+    .boton-hamburguesa {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        order: 1;
+    }
+
+    .menu-navegacion-completo {
+        margin: 0 4%;
+        height: 70px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        overflow: visible;
+        z-index: 99999;
+    }
+
+    .navegacion-principal {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #0c1c2c;
+        z-index: 999999;
+        display: none;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        border-bottom: 4px solid #ffab1a;
+    }
+
+    .navegacion-principal ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navegacion-principal ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .navegacion-principal ul li a {
+        line-height: 55px;
+        width: 100%;
+        display: block;
+        padding: 0 30px;
+        box-sizing: border-box;
+        background: none;
+        color: #ffffff;
+    }
+
+    .botones-derecha {
+        order: 2;
+    }
+
+    .theme-btn {
+        padding: 8px 15px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .logo-box img {
+        height: 35px;
+    }
+
+    .menu-navegacion-completo {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .theme-btn {
+        display: none;
+    }
+}/* Fuerza a mostrar el menú cuando tiene la clase activa */
+#menu-links.menu-abierto {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}

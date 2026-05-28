@@ -1,0 +1,50 @@
+.blog-slider-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* La ventana que oculta lo que se sale de los lados */
+.blog-slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* El riel que se moverá horizontalmente */
+.blog-track {
+  display: flex;
+  gap: 20px; /* Espacio entre tarjetas */
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+/* Cada tarjeta ocupará exactamente un tercio del espacio menos el gap en pantallas grandes */
+.blog-card {
+  min-width: calc(33.333% - 14px); 
+  background: #fff;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.blog-img-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Estilo para tus flechas naranjas de los lados */
+.blog-arrow-btn {
+  background-color: #ff9800; /* Tu color naranja */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+}
